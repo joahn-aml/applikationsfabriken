@@ -1,0 +1,17 @@
+:root {
+	--background-top: rgb(89, 89, 89);
+	--background-middle: rgb(34, 55, 55);
+	--background-bottom: rgb(21, 21, 21);
+	--primary: yellow;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #161616;
+	font-family: 'Open Sans Variable', sans-serif;
+}
+
+::selection {
+	background-color: #03274a;
+}
