@@ -1,6 +1,8 @@
 <main>
 	<h1>
-		<span class="app">Applikations</span><br /><span class="fab">Fabriken</span>
+		<span class="app">Applik<br class="mobile" />ations</span><br /><span class="fab"
+			>Fabr<br class="mobile" />iken</span
+		>
 	</h1>
 </main>
 
@@ -14,7 +16,7 @@
 
 	h1 {
 		margin: 0;
-		font-size: 8vw;
+		font-size: 13vw;
 		line-height: 1;
 		letter-spacing: -0.025em;
 		font-weight: 900;
@@ -43,13 +45,27 @@
 		user-select: none;
 	}
 
+	.mobile {
+		display: none;
+	}
+
 	@media (orientation: portrait) {
-		h1 {
-			font-size: 13vw;
+		.mobile {
+			display: block;
 		}
 
-		br {
-			display: block;
+		h1 {
+			font-size: 21vw;
+		}
+	}
+
+	@media (min-width: 1600px) and (orientation: landscape) {
+		.mobile {
+			display: none;
+		}
+
+		h1 {
+			font-size: 8vw;
 		}
 	}
 </style>
