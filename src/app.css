@@ -1,17 +1,39 @@
 :root {
-	--background-top: rgb(89, 89, 89);
-	--background-middle: rgb(34, 55, 55);
-	--background-bottom: rgb(21, 21, 21);
-	--primary: yellow;
+	--primary: 238 217 112;
+	--secondary: 6 114 229;
+	--tertiary: 143 15 34;
+	--text: 250 248 252;
+	--surface: 18 11 24;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(128, 128, 128, 0.5);
+	height: 100%;
+	overflow: hidden;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Helvetica Neue, Arial, Noto Sans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		Segoe UI Symbol, 'Noto Color Emoji';
+	font-feature-settings: normal;
+	font-variation-settings: normal;
+	display: block;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #161616;
-	font-family: 'Open Sans Variable', sans-serif;
-}
-
-::selection {
-	background-color: #03274a;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+	background-color: rgb(var(--surface));
+	background-image: radial-gradient(at 0% 100%, rgba(var(--secondary) / 0.33) 0px, transparent 50%),
+		radial-gradient(at 98% 100%, rgba(var(--tertiary) / 0.33) 0px, transparent 50%);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
