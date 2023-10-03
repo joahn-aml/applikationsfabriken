@@ -59,7 +59,7 @@
 		}
 	}
 
-	@media (min-width: 1600px) and (orientation: landscape) {
+	@media (min-width: 1300px) and (orientation: landscape) {
 		.mobile {
 			display: none;
 		}
