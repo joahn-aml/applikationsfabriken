@@ -17,7 +17,7 @@
 	h1 {
 		margin: 0;
 		font-size: 13vw;
-		line-height: 1;
+		line-height: 1.13;
 		letter-spacing: -0.025em;
 		font-weight: 900;
 		color: rgb(var(--text));
